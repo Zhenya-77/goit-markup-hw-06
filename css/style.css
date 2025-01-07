@@ -105,6 +105,26 @@ h6 {
   color: #2e2f42;
 }
 
+.address-list-contact .address-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.second-links .icons {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+
 .mobile-button {
   padding: 0;
   border: none;
@@ -512,8 +532,6 @@ min-height: 436px;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-bottom: 8px;
 }
 
 .section-third-item-p {
@@ -529,7 +547,6 @@ min-height: 436px;
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin: 8px 16px 32px 16px;
 }
 
 .section-third-list-icon-item {
@@ -568,6 +585,7 @@ min-height: 436px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 64px 24px;
+    justify-content: center;
   }
 
   .section-third-item {
@@ -671,7 +689,6 @@ min-height: 436px;
     text-align: center;
     color: #2e2f42;
     text-align: center;
-    margin-bottom: 8px;
   }
 
   .section-third-item-p {
@@ -1274,13 +1291,7 @@ min-height: 436px;
   gap: 24px;
 }
 
-.address-list {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 24px;
-  flex-direction: column;
-}
+
 
 .svg-address-container {
   margin: 0 auto;
