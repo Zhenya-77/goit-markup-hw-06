@@ -215,9 +215,12 @@ h6 {
 .section-first {
   max-width: 320px;
   background-color: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-    url(../images/people-office1.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+     url(../images/people-office2x.jpg);
   padding: 72px 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -249,9 +252,18 @@ h6 {
   color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .section-first {
-    max-width: 768px;
+    margin: auto;
+    padding: 112px 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+     url(../images/people-office1.jpg);
+max-width: 768px;
+min-height: 436px;
   }
 
   .section-title {
@@ -367,7 +379,6 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .section-second {
-    width: 768px;
     height: auto;
   }
 
@@ -384,7 +395,8 @@ h6 {
   }
 
   .section-second-p {
-    font-weight: 500;
+    
+    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
@@ -392,11 +404,13 @@ h6 {
   }
 
   .section-second-h-three {
+    text-align: left;
     font-weight: 700;
     font-size: 36px;
     line-height: 111%;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: left;
   }
 
 }
@@ -536,8 +550,6 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .section-third {
-    width: 768px;
-    height: 1224px;
     background-color: #f4f4fd;
   }
 
@@ -620,8 +632,6 @@ h6 {
 @media screen and (min-width: 1158px) {
 
   .section-third {
-    width: 1440px;
-    height: 780px;
     background-color: #f4f4fd;
     padding: 120px 0;
   }
@@ -749,8 +759,6 @@ h6 {
   border-left: 1px solid var(--cornflower);
   border-right: 1px solid var(--cornflower);
   padding: 32px 16px;
-  width: 288px;
-  height: 120px;
 }
 
 .section-four-item-h {
@@ -776,15 +784,8 @@ h6 {
 @media screen and (min-width: 768px) {
 
   .section-four {
-    width: 768px;
     padding-left: 16px;
     padding-right: 16px;
-  }
-
-
-  .section-four .container {
-    width: 736px;
-    height: 1516px;
   }
 
 
@@ -836,7 +837,6 @@ h6 {
 @media screen and (min-width: 1158px) {
 
   .section-four {
-    width: 1158px;
     padding: 120px 0 120px 0;
   }
 
@@ -1060,6 +1060,7 @@ h6 {
 
 .footer-svg {
   margin-left: 16px;
+  fill: #fff;
 }
 
 .form-button-footer {
